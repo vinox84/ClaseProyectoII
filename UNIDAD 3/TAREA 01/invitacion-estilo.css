@@ -1,0 +1,295 @@
+body{
+    margin:0;
+}
+.fwh-slide {
+    height: 100vh;
+    block-size: 100vw;
+    padding: 35px;
+}
+/*--SECCION 01-INTRO--*/
+.gridcont-intro{
+    height: 100vh;
+    block-size: border-box;
+    padding: 35px;
+    margin: 0;
+    background-color: lightpink;
+    display: grid;
+    grid-template-columns:[col-1] 1fr ;
+    grid-template-rows: 85% 15%;
+    align-items: center;
+    justify-items: center;
+    align-content: space-evenly;
+    justify-content: center;
+    grid-template-areas: 
+    "mnsj"
+    "scr";
+}    
+.item-intro {
+    grid-area: mnsj;
+}
+
+.item-indicador {
+    grid-area: scr;
+}
+/*--SECCION 02-INICIO--*/
+
+.gridcont-inicio {
+    height: 100vh;
+    block-size: 100vw;
+    padding: 35px;
+    margin: 0;
+    background-color:goldenrod;
+    display: grid;
+    grid-template-columns:[col-1] 1fr [col-2] 1fr[col-3] 1fr ;
+    grid-template-rows: [row-1] 5% [row-2] 40% [row-3] 25%[row-4] 10%[row-5] 10% [row-6] 10%;
+    align-items: center;
+    justify-items: center;
+    align-content: space-evenly;
+    justify-content: center;
+    grid-template-areas: 
+    "mnu mnu mnu"
+    "nva . nvo"
+    "mnsJ mnsj mnsj"
+    "lgr fch hra"
+    "frml . kds"
+    "ctd ctd ctd"
+    ;
+}
+.item-menu {
+    grid-area: mnu;
+    }
+.item-novia {
+    grid-area: nva;
+    }
+
+    .item-novio {
+    grid-area: nvo;
+    }
+
+.item-mensaje {
+    grid-area: mnsj;
+    }
+
+.item-lugar {
+    grid-area: lgr;
+    }
+
+.item-fecha {
+    grid-area: fch;
+    }
+
+.item-hora {
+    grid-area: hra;
+    }
+
+.item-formal {
+    grid-area: frml;
+    }
+
+.item-kids {
+    grid-area: kds;
+    }
+
+.item-countdown {
+    grid-area: ctd;
+    }
+    
+/*--SECCION 03-PADRES--*/
+.gridcont-padres {
+    height: 100vh;
+    block-size: 100vw;
+    padding: 35px;
+    margin: 0;
+    background-color:lightcoral;
+    display: grid;
+    grid-template-columns:[col-1] 1fr [col-2];
+    grid-template-rows: [row-1]5% [row-2]15% [row-3]32.5%[row-4]15% [row-5]32.5%;
+    align-items: center;
+    justify-items: center;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    grid-template-areas: 
+    "mnu mnu"
+    "msj1 msj1"
+    "pps-nva pps-nvo"
+    "msj2 msj2"
+    "pds-nva pds-nvo";        ;
+}
+.item-menu {
+    grid-area: mnu;
+    }
+
+.item-mensaje1 {
+    grid-area: msj1;
+    }
+
+    .item-padres-novia {
+    grid-area: pps-nva;
+    }
+
+.item-padres-novio {
+    grid-area: pps-nvo;
+    }
+
+.item-mensaje2 {
+    grid-area: msj2;
+    }
+
+.item-padrinos-novia {
+    grid-area: pds-nva;
+    }
+
+.item-padrinos-novio {
+    grid-area: pds-nvo;
+    }
+
+/*--SECCION 03-TIMELINE--*/
+.gridcont-timeline {
+    height: 100vh;
+    block-size: 100vw;
+    padding: 35px;
+    margin: 0;
+    background-color:lightseagreen;
+    display: grid;
+    grid-template-columns:[col-1] 1fr [col-2] 1fr;
+    grid-template-rows: [row-1] 5% [row-2] 45% [row-3] 40%[row-4] 10%;
+    align-items: center;
+    justify-items: center;
+    align-content: space-evenly;
+    justify-content: center;
+    grid-template-areas: 
+    "mnu mnu"
+    "fto1 fto2"
+    "info1 info2"
+    "lnk1 lnk2"
+    ;
+}
+.item-menu {
+    grid-area: mnu;
+    }
+.item-fotoceremonia {
+    grid-area: fto1;
+    }
+
+    .item-fotorecepcion {
+    grid-area: fto2;
+    }
+
+.item-infoceremonia {
+    grid-area: info1;
+    }
+
+.item-inforecepcion {
+    grid-area: info2;
+    }
+
+.item-linkceremonia{
+    grid-area: lnk1;
+    }
+
+.item-linkrecepcion {
+    grid-area: lnk2;
+    }
+
+/*--SECCION 04-RSVP--*/
+.gridcont-rsvp {
+    height: 100vh;
+    block-size: 100vw;
+    padding: 35px;
+    margin: 0;
+    background-color:lightsalmon;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns:[col-1] 1fr;
+    grid-template-rows: [row-1] 5% [row-2] 95%;
+    grid-template-areas: 
+    "mnu"
+    "formulario"
+}
+
+.item-menu {
+    grid-area: mnu;
+    }
+    
+.item-formulario {
+    grid-area: formulario;
+    max-width: 550px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    }
+
+
+.h2form{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.field{
+    width: 100%;
+    padding: .5rem .1rem;
+    outline: none;
+    border: 2px solid lightslategrey;
+    background-color: lightgray;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+}
+.item-foto{
+    background-color:slateblue no-repeat center;
+    background-size: cover;
+    }
+.item-registro{
+    padding: 25px 70px;
+    }
+
+/*--SECCION 05-MESA DE REGALOS--*/
+.gridcont-regalos {
+    height: 100vh;
+    block-size: 100vw;
+    padding: 35px;
+    margin: 0;
+    background-color:lightskyblue;
+    display: grid;
+    grid-template-columns:[col-1] 1fr [col-2] 1fr;
+    grid-template-rows: [row-1] 5% [row-2] 20% [row-3] 20%[row-4] 55%;
+    align-items: center;
+    justify-items: center;
+    align-content: space-evenly;
+    justify-content: center;
+    grid-template-areas: 
+    "mnu mnu"
+    "msjreg msjreg"
+    "icon1 icon2"
+    "info1 info2"
+    ;
+    text-align: center;
+}
+.item-menu {
+    grid-area: mnu;
+    }
+.item-mensajeregalos {
+    grid-area: msjreg;
+    }
+
+    .item-iconmesa {
+    grid-area: icon1;
+    }
+
+.item-iconsobre {
+    grid-area: icon2;
+    }
+
+.item-infomesa {
+    grid-area: info1;
+    }
+
+.item-infosobre{
+    grid-area: info2;
+    }
+
