@@ -25,10 +25,47 @@ body{
 
 .item-indicador {
     grid-area: scr;
-}
-/*--SECCION 02-INICIO--*/
 
-.gridcont-inicio {
+}
+/*--MENÚ--*/
+#menu {
+    grid-area: mnu;
+    margin: 0%;
+    padding: 0%;
+}
+.mainMenu ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: center;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+    .mainMenu li {
+        display: flex;
+    }
+
+    .mainMenu li a {
+        text-decoration: none;
+        color: black;
+        padding: .6em 1em;
+
+    }
+    .mainMenu li:hover {
+        background: white;
+    }
+    .mainMenu li a:hover {
+        color: black;
+    }
+    .txtBtn {
+        font-size: 18px;
+    }
+    /*--SECCION 02-PRESENTACION--*/
+.gridcont-presentacion {
     height: 100vh;
     block-size: 100vw;
     padding: 35px;
@@ -44,15 +81,13 @@ body{
     grid-template-areas: 
     "mnu mnu mnu"
     "nva . nvo"
-    "mnsJ mnsj mnsj"
+    "mnsj mnsj mnsj"
     "lgr fch hra"
     "frml . kds"
     "ctd ctd ctd"
     ;
 }
-.item-menu {
-    grid-area: mnu;
-    }
+
 .item-novia {
     grid-area: nva;
     }
@@ -62,6 +97,7 @@ body{
     }
 
 .item-mensaje {
+    text-align: center;
     grid-area: mnsj;
     }
 
@@ -89,7 +125,7 @@ body{
     grid-area: ctd;
     }
     
-/*--SECCION 03-PADRES--*/
+/*--SECCION 03-TESTIGOS--*/
 .gridcont-padres {
     height: 100vh;
     block-size: 100vw;
@@ -110,9 +146,6 @@ body{
     "msj2 msj2"
     "pds-nva pds-nvo";        ;
 }
-.item-menu {
-    grid-area: mnu;
-    }
 
 .item-mensaje1 {
     grid-area: msj1;
@@ -159,9 +192,7 @@ body{
     "lnk1 lnk2"
     ;
 }
-.item-menu {
-    grid-area: mnu;
-    }
+
 .item-fotoceremonia {
     grid-area: fto1;
     }
@@ -195,26 +226,14 @@ body{
     display: flex;
     flex-direction: column;
     align-content:center;
-    /*display: grid;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns:[col-1] 1fr;
-    grid-template-rows: [row-1] 5% [row-2] 95%;
-    grid-template-areas: 
-    "mnu"
-    "titulos"
-    "formulario"*/
 }
+#menuRsvp{
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 100px;
+    list-style-type: none;
 
-/*.mainMenu {
-    grid-area: mnu;
-    }
-*/
-.mainMenu{
-    background-color: linen;
-    flex-direction: row-reverse;
-    text-align: right;
+    background: transparent;
 }
 
 .rsvpTitulos {
@@ -301,6 +320,10 @@ body{
         align-self: center;
         font-size: 18px;
     }
+    .radioBtn{
+        width: 20px;
+        height: 20px;
+    }
     .radio1{
         border-right-style: solid;
         border-right-color: rosybrown;
@@ -356,9 +379,7 @@ body{
     ;
     text-align: center;
 }
-.item-menu {
-    grid-area: mnu;
-    }
+
 .item-mensajeregalos {
     grid-area: msjreg;
     }
