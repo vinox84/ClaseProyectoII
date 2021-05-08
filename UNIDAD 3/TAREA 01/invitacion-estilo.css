@@ -1,11 +1,6 @@
 body{
     margin:0;
 }
-.fwh-slide {
-    height: 100vh;
-    block-size: 100vw;
-    padding: 35px;
-}
 /*--SECCION 01-INTRO--*/
 .gridcont-intro{
     height: 100vh;
@@ -62,7 +57,7 @@ body{
     grid-area: nva;
     }
 
-    .item-novio {
+.item-novio {
     grid-area: nvo;
     }
 
@@ -123,7 +118,7 @@ body{
     grid-area: msj1;
     }
 
-    .item-padres-novia {
+.item-padres-novia {
     grid-area: pps-nva;
     }
 
@@ -171,7 +166,7 @@ body{
     grid-area: fto1;
     }
 
-    .item-fotorecepcion {
+.item-fotorecepcion {
     grid-area: fto2;
     }
 
@@ -192,13 +187,15 @@ body{
     }
 
 /*--SECCION 04-RSVP--*/
-.gridcont-rsvp {
+.seccionRsvp {
     height: 100vh;
-    block-size: 100vw;
     padding: 35px;
     margin: 0;
-    background-color:lightsalmon;
-    display: grid;
+    background-color:linen;
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    /*display: grid;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -206,46 +203,135 @@ body{
     grid-template-rows: [row-1] 5% [row-2] 95%;
     grid-template-areas: 
     "mnu"
-    "formulario"
+    "titulos"
+    "formulario"*/
 }
 
-.item-menu {
+/*.mainMenu {
     grid-area: mnu;
     }
-    
-.item-formulario {
-    grid-area: formulario;
-    max-width: 550px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
+*/
+.mainMenu{
+    background-color: linen;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.rsvpTitulos {
+    background-color: linen;
+    margin-top: 1px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+     /*grid-area: titulos;*/
+}
+.rsvpTtltxt{
+    margin: 1px;
+    padding: 0px;
+}
+.rsvpH2{
+    margin: 1px;
+    padding: 0px;
+}
+
+.rsvpSubtxt{
+    background-color: linen;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    margin-left: -30px; 
+    margin-right: -30px;
+    padding: 0px;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: rosybrown;
+}
+.rsvpP{
     text-align: center;
-    background-color: #fff;
-    }
-
-
-.h2form{
-    position: relative;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    padding: 0px;
+}
+    
+.rsvpFormulario {
+    background-color: linen;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-color:rosybrown;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-self: center;
+    margin-top: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    /*grid-area: formulario;*/
 }
 
-.field{
-    width: 100%;
-    padding: .5rem .1rem;
-    outline: none;
-    border: 2px solid lightslategrey;
-    background-color: lightgray;
-    font-size: 1.1rem;
-    margin-bottom: 22px;
-}
-.item-foto{
-    background-color:slateblue no-repeat center;
-    background-size: cover;
+    .rsvpFormLabel{
+        padding-top:20px;
+        margin-top:0%;
+        margin-bottom: 20px;
+        font-size: 18px;
     }
-.item-registro{
-    padding: 25px 70px;
+
+    .rsvpFormfield{
+        background-color: linen;
+        width: 100%;
+        padding: 0%;
+        margin-bottom: 20px;
+        outline: none;
+        border-bottom-style: solid;
+        border-bottom-color: rosybrown;
+        border-bottom-width: 1px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        font-size: 18px;
+    }
+    .rsvpRadio{
+        background-color: linen;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        align-self: center;
+        font-size: 18px;
+    }
+    .radio1{
+        border-right-style: solid;
+        border-right-color: rosybrown;
+        border-right-width: 1px;
+        padding-right: 20px;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+    }
+    .radio2{
+        margin-left: 20px;
+    }
+
+    .rsvpBtn{
+
+        align-self: center;
+        text-align: center;
+        justify-self: center;
+        border:none;
+        border-radius: 2px;
+        background-color: rosybrown;
+        color: white;
+        width: 50%;
+        height: 30px;
+        font-size: 16px;
+        overflow: hidden;
+        margin-top: 20px;
+
+    }
+    .rsvpBtn:hover{
+        background-color:darkgray;
     }
 
 /*--SECCION 05-MESA DE REGALOS--*/

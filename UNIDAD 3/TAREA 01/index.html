@@ -113,7 +113,7 @@
 
     </section>
 
-    <section class="fwh-slide gridcont-timeline"><!--SECCION 04-TIMELINE -->
+    <section class="gridcont-timeline"><!--SECCION 04-TIMELINE -->
         <div class="item-menu">
             <h3>Menu</h3>
         </div>
@@ -150,24 +150,39 @@
         
     </section>
 
-    <section class="fwh-slide gridcont-rsvp"><!--SECCION 05-RSVP -->
-        <div class="item-menu">
+    <section class="seccionRsvp"><!--SECCION 05-RSVP -->
+        
+        <div class="mainMenu">
             <h3>Menu</h3>
         </div>
 
-        <div class="item-formulario">
-            <div class="foto"></div>
-            <div class=registro>
-                <h2 class="h2form">Registro</h2>
-                <input type="text" class="field" placeholder="Nombre">
-                <input type="text" class="field" placeholder="Apellido">
-                <input type="email" class="field" placeholder="Correo Electrónico">
-                <label for="Asistiré"> Asistiré</label>
-                <input type="checkbox" name="SiAsiste" value="Si">
-                <label for="No Asistiré"> No Asistiré</label>
-                <input type="checkbox" name="NoAsiste" value="No">
-                <button type="submit" value="Submit">Enviar</button>
+        <div class="rsvpTitulos">
+            <div class="rsvpTtltxt"><h2 class="rsvpH2">Repondez, s'il vous plaît</h2></div>
+            <div class="rsvpSubtxt"><p class="rsvpP">RSVP</p></div>
+        </div>
+
+        <div class="rsvpFormulario">
+            <label for="Nombre" class="rsvpFormLabel"> Mi Nombre</label>
+            <input type="text" class="rsvpFormfield" name="Nombre">
+
+            <label for="Apellido" class="rsvpFormLabel"> Mis Apellidos</label>
+            <input type="text" class="rsvpFormfield" name="Apellido">
+
+            <label for="Correo Electrónico" class="rsvpFormLabel"> Mi Correo</label>         
+            <input type="email" class="rsvpFormfield" name="Correo Electrónico">
+
+            <div class="rsvpRadio">
+                <div class="radio1">
+                    <label for="Asistiré"> Asistiré</label>
+                    <input type="radio" name="SiAsiste" value="Si">
+                </div>
+                <div class="radio2">
+                    <label for="No Asistiré"> No Asistiré</label>
+                    <input type="radio" name="NoAsiste" value="No">
+                </div>
             </div>
+
+             <button type="submit" value="Submit" class="rsvpBtn">Enviar</button>
         </div>
     </section>
     
